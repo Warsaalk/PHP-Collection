@@ -1,4 +1,10 @@
 <?php
+/** 
+ * @package PHP-Collection
+ * @license http://opensource.org/licenses/mit-license.php
+ * @author Klaas Van Parys <https://github.com/Warsaalk>
+ */
+ 
 class Connection {
 
 	const 	FETCH = 1,
