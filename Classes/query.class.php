@@ -1,7 +1,6 @@
 <?php
 /** 
  * @package PHP-Collection
- * @subpackage Classes\Utils
  * @license http://opensource.org/licenses/mit-license.php
  * @author Klaas Van Parys <https://github.com/Warsaalk>
  */
