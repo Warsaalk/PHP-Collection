@@ -1,10 +1,10 @@
 <?php
-/** 
+/**
  * @package PHP-Collection
  * @license http://opensource.org/licenses/mit-license.php
  * @author Klaas Van Parys <https://github.com/Warsaalk>
  */
- 
+
 class Connection {
 
 	const 	FETCH = 1,
@@ -163,10 +163,11 @@ class Connection {
 			
 			$result = $this->connection->prepare($query);
 			$this->bind($result, $data);
-			$result->execute();
+			$return = $result->execute();
 			
 			if (!$this->userTransaction) $this->connection->commit();
-				return true;
+			
+			return $return;
 		
 		} catch(PDOException $e) {
 				
